@@ -6,35 +6,35 @@
 
 * Register for an account using a unique email address and password to access protected application features.
 
-## Account login
+### Account login
 
 * Authenticate and log in to the account using the registered email address and password for secure access to application features.
 
-## Create a new record
+### Create a new record
 
 * Create a new record by providing a title and description.
 
-## View a specific record
+### View a specific record
 
 * Retrieve a specific record by supplying the record ID, ensuring that it should be only reached by Authenticated users.
 
-## View all records
+### View all records
 
 * Obtain a comprehensive list of all records, ensuring that it should be only reached by Authenticated users.
 
-## Update a record
+### Update a record
 
 * Modify a record by providing the record ID along with updated title and description fields. The API will process the update only if the record belongs to the user's account, ensuring data integrity.
 
-## Delete a record
+### Delete a record
 
 * Remove a record by specifying the record ID, allowing deletion only if it pertains to the user's account for proper data management.
 
-## User account creation requirements
+### User account creation requirements
 
 * During account creation, provide a unique and valid email address meeting the specified criteria.
 
-## API responses
+### API responses
 
 * If any of the requirements are not met, the API will return a proper response message.
 
