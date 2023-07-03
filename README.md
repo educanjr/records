@@ -55,13 +55,14 @@
 2. Application: The layer that coordinates the use cases of the system.
 3. Infrastructure:
 
-3.1 Infrasetructure project: Implement interfaces from the Application Layer to provide functionality to access external systems.
-3.2 Persistence project: Implement interfaces from the Application Layer to provide functionality to access database.
+* Infrasetructure project: Implement interfaces from the Application Layer to provide functionality to access external systems.
+
+* Persistence project: Implement interfaces from the Application Layer to provide functionality to access database.
 
 4. Presentation:
 
-4.1. Web.App Project: Contain the core of the application, in charge of inject dependencies, run the application and orchestrate how it built.
-4.2. Presentation Project: Contain controllers and endpoints, creating this separation we mitigate the direct interactions in between Presentation and Infrastructure layers.
+* Web.App Project: Contain the core of the application, in charge of inject dependencies, run the application and orchestrate how it built.
+* Presentation Project: Contain controllers and endpoints, creating this separation we mitigate the direct interactions in between Presentation and Infrastructure layers.
 
 * And lastly SOLID proinciples where also applied in several ways:
 
