@@ -1,0 +1,56 @@
+version: '3.8'
+
+networks:
+  ballastlane.dev:
+    driver: bridge
+
+services:
+  ballastlane.api:
+    depends_on:
+      - "app_db"
+    container_name: backend
+    build:
+      context: ./Backend
+      dockerfile: BallastLane.App/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ConnectionStrings__Database=User ID=postgres;Password=postgres;Server=app_db;Port=5432;Database=BallastLaneBD;IntegratedSecurity=true;Pooling=true;
+    ports:
+      - "7006:80"
+      - "7007:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    networks:
+      - ballastlane.dev
+
+  app_db:
+    image: postgres:latest
+    container_name: app_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=BallastLaneBD
+    ports: 
+      - "5433:5432"
+    restart: always
+    volumes: 
+      - app_data:/var/lib/postgresql/data
+    networks:
+      - ballastlane.dev
+
+  ballastlane.front:
+    container_name: frontend
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app_vol
+    ports:
+      - "8000:3000"
+    networks:
+      - ballastlane.dev
+
+volumes:
+  app_data:  
