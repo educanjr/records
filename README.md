@@ -38,13 +38,13 @@
 
 * If any of the requirements are not met, the API will return a proper response message.
 
-** 400 Bad Request: If the data don't complain with the especifocations.
+    400 Bad Request: If the data don't complain with the especifocations.
 
-** 403 Forbiden: If the user is not the owner to the resource to access.
+    403 Forbiden: If the user is not the owner to the resource to access.
 
-** 401 Unauthorized: If the request don't belong to an auhtorized user.
+    401 Unauthorized: If the request don't belong to an auhtorized user.
 
-** 200 - 204: To in form de correct behavior of the application.
+    200 - 204: To in form de correct behavior of the application.
 
 ## Methodologies Used
 
@@ -55,14 +55,15 @@
 2. Application: The layer that coordinates the use cases of the system.
 3. Infrastructure:
 
-* Infrasetructure project: Implement interfaces from the Application Layer to provide functionality to access external systems.
+    Infrasetructure project: Implement interfaces from the Application Layer to provide functionality to access external systems.
 
-* Persistence project: Implement interfaces from the Application Layer to provide functionality to access database.
+    Persistence project: Implement interfaces from the Application Layer to provide functionality to access database.
 
 4. Presentation:
 
-* Web.App Project: Contain the core of the application, in charge of inject dependencies, run the application and orchestrate how it built.
-* Presentation Project: Contain controllers and endpoints, creating this separation we mitigate the direct interactions in between Presentation and Infrastructure layers.
+    Web.App Project: Contain the core of the application, in charge of inject dependencies, run the application and orchestrate how it built.
+
+    Presentation Project: Contain controllers and endpoints, creating this separation we mitigate the direct interactions in between Presentation and Infrastructure layers.
 
 * And lastly SOLID proinciples where also applied in several ways:
 
