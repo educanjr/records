@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureTests", "Archit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallastLane.DomainTests", "BallastLane.DomainTests\BallastLane.DomainTests.csproj", "{80F73AA7-0981-4262-8F73-92D88E326856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallastLane.ApplicationTests", "BallastLane.InfrastructureTests\BallastLane.ApplicationTests.csproj", "{CCC9CDA5-65B5-44BC-B5CC-47DD0F660FFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallastLane.ApplicationTests", "BallastLane.ApplicationTests\BallastLane.ApplicationTests.csproj", "{CCC9CDA5-65B5-44BC-B5CC-47DD0F660FFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallastLane.PresentationTests", "BallastLane.PresentationTests\BallastLane.PresentationTests.csproj", "{9CD0D05E-B3E2-4184-AC04-B66EF279BF24}"
 EndProject
