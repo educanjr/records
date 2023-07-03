@@ -144,6 +144,26 @@ Creates a new user.
 PUT api/Users/{id}
 Updates an existing user by ID.
 
-DELETE api/Users/login
+POST api/Users/login
 Authenticate en user in the API and return a JWT token.
 ```
+
+## Pending points
+
+### Backend
+
+* Create Unit tests for Persistency porject to validate Dapper queries.
+
+* Add extra validation rules to the data injected into the APP using the API endpoints.
+
+* Improve de management of errors. Introducing new classes that tribute to enhance the application workflow identi fy the origing of the error and provide an acurate response.
+
+### Frontend
+
+"There is a lot of work to do here"
+
+* Improve the styles to get a better visualization.
+
+* Add redirections after Sing-in and Sign-up proccess.
+
+* Add Pages, Views and Components to enable the management of the Records.
