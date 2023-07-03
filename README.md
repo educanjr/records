@@ -51,8 +51,14 @@
 * The BallastLane  API was developed using a test-driven development (TDD) approach, which ensured that all code was thoroughly tested before being implemented.
 * The project also applies Clean Architecture by dividing the codebase into layers that are independent of each other. The layers are:
 
-1. Domain: The core business logic of the application, where the entities, and business rules reside
-2. Application: The layer that coordinates the use cases of the system.
+1. Domain:
+
+    The core business logic of the application, where the entities, and business rules reside.
+
+2. Application:
+
+    The layer that coordinates the use cases of the system.
+
 3. Infrastructure:
 
     Infrasetructure project: Implement interfaces from the Application Layer to provide functionality to access external systems.
