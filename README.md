@@ -1,16 +1,50 @@
-# BallastLane API
+# BallastLane APP
 
 ## User Story
-As a user, I want to use the BallastLane API to create, view, update, and delete records for my account so that I can manage my personal information. I expect that:
 
-* Register for an account with a unique username and email address, and a password that meets certain criteria, so that I can access protected features of the application.
-* Log in to my account with my registered email address and password, so that I can access protected features of the application
-* When I create a new record, I must provide a title and a description. The title must be between 1 and 100 characters long, and the description must be between 1 and 500 characters long.
-* When I view a record, I must provide the record ID, and the API should return the record only if it belongs to my account.
-When I view all records for my account, the API should return a list of all records that belong to my account.
-* When I update a record, I must provide the record ID and the new title and description. The title must be between 1 and 100 characters long, and the description must be between 1 and 500 characters long. The API should update the record only if it belongs to my account.
-* When I delete a record, I must provide the record ID, and the API should delete the record only if it belongs to my account.
-* Additionally, when I create a new user account, I must provide a unique  and valid email address. If any of these requirements are not met, the API should return a 400 Bad Request status code with a message indicating the error.
+### User registration
+
+* Register for an account using a unique email address and password to access protected application features.
+
+## Account login
+
+* Authenticate and log in to the account using the registered email address and password for secure access to application features.
+
+## Create a new record
+
+* Create a new record by providing a title and description.
+
+## View a specific record
+
+* Retrieve a specific record by supplying the record ID, ensuring that it should be only reached by Authenticated users.
+
+## View all records
+
+* Obtain a comprehensive list of all records, ensuring that it should be only reached by Authenticated users.
+
+## Update a record
+
+* Modify a record by providing the record ID along with updated title and description fields. The API will process the update only if the record belongs to the user's account, ensuring data integrity.
+
+## Delete a record
+
+* Remove a record by specifying the record ID, allowing deletion only if it pertains to the user's account for proper data management.
+
+## User account creation requirements
+
+* During account creation, provide a unique and valid email address meeting the specified criteria.
+
+## API responses
+
+* If any of the requirements are not met, the API will return a proper response message.
+
+** 400 Bad Request: If the data don't complain with the especifocations.
+
+** 403 Forbiden: If the user is not the owner to the resource to access.
+
+** 401 Unauthorized: If the request don't belong to an auhtorized user.
+
+** 200 - 204: To in form de correct behavior of the application.
 
 ## Methodologies Used
 
