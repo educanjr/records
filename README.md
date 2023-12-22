@@ -158,7 +158,7 @@ Authenticate en user in the API and return a JWT token.
 
 ### Backend
 
-* Create Unit tests for Persistency porject to validate Dapper queries.
+* Create Unit tests for Persistency project to validate Dapper queries.
 
 * Add extra validation rules to the data injected into the APP using the API endpoints.
 
